@@ -1,0 +1,42 @@
+/******サイドバー******/
+.sidebar-wrapper {
+  height: 100vh;
+  width: 300px;
+  background-color: #253141;
+}
+
+.sidebar-head {
+  height: 100px;
+  padding: 0 20px;
+  background-color: #253141;
+}
+
+.sidebar-rooms {
+  height: calc(100% - 100px);
+  padding: 0 20px;
+  background-color: #2f3e51;
+}
+
+/*******チャット画面*******/
+.chat-wrapper {
+  height: 100vh;
+  width: calc(100vw - 300px);
+}
+
+.chat-head {
+  height: 100px;
+  padding: 0 40px;
+  background-color: #ffffff;
+}
+
+.chat-main {
+  height: calc(100% - 100px - 90px);
+  padding: 46px 40px 0;
+  background-color: #fafafa;
+}
+
+.chat-bottom {
+  height: 90px;
+  padding: 20px 40px;
+  background-color: #dddddd;
+}
