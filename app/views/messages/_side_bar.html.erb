@@ -1,16 +1,11 @@
 <div class="sidebar-head">
   <%= link_to current_user.name, edit_user_path(current_user), {class: "sidebar-name"} %>
-  <a class="chat-create-btn", href="#">チャットを作成する</a>
+  <%= link_to 'チャットを作成する', new_room_path, class: "chat-create-btn" %>
 </div>
 <div class="sidebar-rooms">
-  <div class="room-name-wrapper">
-    <a class="room-name" href="#">ルーム１</a>
-  </div>
+  <% current_user.rooms.each do |room| %>
     <div class="room-name-wrapper">
-    <a class="room-name" href="#">ルーム2</a>
-  </div>
-  <div class="room-name-wrapper">
-    <a class="room-name" href="#">ルーム3</a>
-  </div>
-
+      <%= link_to room.name, "#", class: "room-name" %>
+    </div>
+  <% end %>
 </div>
