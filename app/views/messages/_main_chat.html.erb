@@ -19,14 +19,12 @@
   </div>
 </div>
 <div class="chat-bottom">
-  <form class="chat-form">
-    <div class="chat-input-area">
-      <input type="text" class="chat-bottom-text" placeholder="type a message">
-      <label class="form-image">
-        <span class="image-file">画像</span>
-        <input type="file" class="hidden">
-      </label>
-    </div>
-    <input type="submit" class="chat-submit-btn" value="送信">
-  </form>
+  <%= form_with model: [@room, @message], class: 'chat-input-area', local: true do |f| %>
+    <%= f.text_field :content, class: 'chat-bottom-text', placeholder: 'type a message' %>
+    <label class="form-image">
+      <span class="image-file">画像</span>
+      <%= f.file_field :image, class: 'hidden' %>
+    </label>
+    <%= f.submit '送信', class: 'chat-submit-btn' %>
+  <% end %>
 </div>
