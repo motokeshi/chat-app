@@ -108,14 +108,9 @@
   background-color: #dddddd;
 }
 
-.chat-form {
-  display: flex;
-}
-
 .chat-input-area {
   display: flex;
   width: 100%;
-  margin-right: 15px;
   background-color: white;
 }
 
