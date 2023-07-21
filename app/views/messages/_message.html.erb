@@ -1,0 +1,13 @@
+  <div class="message-wrapper">
+    <div class="message-head">
+      <div class="poster-name">
+        <%= message.user.name %>
+      </div>
+      <div class="posted-date">
+        <%= message.updated_at %>
+      </div>
+    </div>
+    <p class="message-text">
+      <%= message.content %>
+    </p>
+  </div>
